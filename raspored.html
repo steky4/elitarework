@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ucesnici</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<style type="text/css">
+	body{
+		position: fixed;
+		height: 100%;
+		width: 100%;
+		background: url(grbici.png), rgba(116,24,29,1);
+		background-attachment: fixed;
+		background-repeat: repeat;
+		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	}
+	
+	.table{
+		position: fixed;
+		width: calc(90% - 20px);
+		height: 50%;
+		left: 5%;
+		top: 20%;
+		background-color: rgba(0,0,0,0.6);
+		color: white;
+		border: 10px solid white;
+
+	}
+	@media screen and (max-width: 400px) {
+  	.table{
+  	position: fixed;
+    left: 0%;
+    top: 7%;
+    width: 100%;
+    height: 93%;
+    border: none;
+    overflow-x: auto;
+    }
+}
+	.tale{
+		position: relative;
+		width: 90%;
+		left: 5%;
+		height: 90%;
+	}
+	.unut{
+		height: 50px;
+		text-align: center;
+	}
+	.sat{
+		height: 30px;
+  		background-color: red;
+  		color: white;
+  		text-align: center;
+  		border: 2px solid red;
+  		transition: 0.5s;
+  		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	}
+	.sat:hover{
+		background-color: white;
+		color: black;
+	}
+	.sat1{
+		height: 30px;
+  		background-color: rgba(255,165,0,1);
+  		color: white;
+  		text-align: center;
+  		border: 2px solid orange;
+  		transition: 0.5s;
+  		padding: 0px;
+  		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	}
+	.sat1:hover{
+		background-color: white;
+		color: black;
+	}
+	.sat2{
+		height: 30px;
+  		background-color: rgba(0,255,0,1);
+  		color: white;
+  		text-align: center;
+  		border: 2px solid rgba(0,255,0,1);
+  		transition: 0.5s;
+  		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	}
+	.sat2:hover{
+		background-color: white;
+		color: black;
+	}
+	.satra{
+		height: 50px;
+  		background-color: rgba(255,0,0,1);
+  		color: white;  		
+  		text-align: center;
+	}
+	.satra1{
+		height: 50px;
+  		background-color: rgba(255,165,0,1);
+  		color: white;		
+  		text-align: center;
+	}
+	.satra2{
+		height: 50px;
+  		background-color: rgba(0,255,0,1);
+  		color: white; 		
+  		text-align: center;
+	}
+	.natpis{
+			height: 7%;
+		width: 100%;
+		top: 0%;
+		left: 0%;
+		position: fixed;
+		text-align: center;
+		z-index: 5;
+		color: white;
+		border-bottom: 1px dashed white;
+		display: table
+		background-color: rgba(0,0,0,0.6);
+	}
+.poc{
+		background-color: rgba(0,0,0,0.6);
+		position: absolute;
+		display: table;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 30%;
+		transition: 0.3s;
+		font-size: calc(6px + 0.3vw);
+		border-right: 1px dashed white;
+		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	}
+	.poc:hover{
+		background-color: white;
+	}
+	.poc:hover .c{
+		color: rgba(91, 19, 23, 1);
+	}
+	.c{
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.uces{
+		background-color: rgba(0,0,0,0.6);
+		display: table;
+		position: absolute;
+		left: 30%;
+		top: 0%;
+		width: 100%;
+		height: 100%;
+		text-align: left;
+		font-size: calc(6px + 0.3vw);
+		padding-left: 5%;
+		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+		transition: 0.3s;
+	}
+</style>
+</head>
+<body>
+	<div class="natpis">
+		<a class="poc" href="index.html" style="text-decoration: none; color: white;"><h1 class="c">POČETNA</h1></a>
+		<div class="uces"><h1 class="c">- RASPORED TRENINGA</h1></div>
+	</div>
+	<div class="table" style="overflow-x:auto;">
+	<table class="tale">
+		<tr>
+			<th class="unut">GRUPA</th>
+			<th class="unut">PON</th>
+			<th class="unut">UTO</th>
+			<th class="unut">SRE</th>
+			<th class="unut">ČET</th>
+			<th class="unut">PET</th>
+			<th class="unut">SUB</th>
+			<th class="unut">NED</th>
+		</tr>
+		<tr>
+			<td class="satra"><strong>CRVENA</strong></td>
+			<td class="sat">-</td>
+			<td class="sat">-</td>
+			<td class="sat">-</td>
+			<td class="sat">17:45<br>OŠ"JOVAN POPOVIĆ"</td>
+			<td class="sat">-</td>
+			<td class="sat">18:30<br>OŠ"PETAR KOČIĆ"</td>
+			<td class="sat">10:00<br>SPORT CAFFE</td>
+		</tr>
+		<tr>
+			<td class="satra1"><strong>NARANDŽASTA</strong></td>
+			<td class="sat1">-</td>
+			<td class="sat1">-</td>
+			<td class="sat1">19:00<br>OŠ"JOVAN POPOVIĆ"</td>
+			<td class="sat1">-</td>
+			<td class="sat1">-</td>
+			<td class="sat1">19:30<br>OŠ"PETAR KOČIĆ</td>
+			<td class="sat1">11:00<br>SPORT CAFFE</td>
+		</tr>
+		<tr>
+			<td class="satra2"><strong>ZELENA</strong></td>
+			<td class="sat2">-</td>
+			<td class="sat2">-</td>
+			<td class="sat2">-</td>
+			<td class="sat2">19:00<br>SPORT CAFFE</td>
+			<td class="sat2">-</td>
+			<td class="sat2">20:30<br>OŠ"PETAR KOČIĆ</td>
+			<td class="sat2">12:00<br>SPORT CAFFE</td>
+		</tr>
+	</table>
+	</div>
+</body>
+</html>
