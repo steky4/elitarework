@@ -18,39 +18,36 @@
 			height: 100%;
 			width: 100%;
 			background-image: url(CLANOVI/pozadina.jpg);
+			box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+			background-attachment: fixed;
+		}
+		@media screen and (max-width: 500px) {
+  			.div{
+  				background-image: url(POCETNA/zastava-mala.jpg);
+  				background-size: 100% 100%;	
+    		}
 		}
 		.links{
 			text-align: center;
 			position: absolute;
-			top: 60%;
+			top: 70%;
 			left: 30%;
 			height: 20%;
 			width: 40%;
 			box-shadow: 0 0 10px rgba(0,0,0,0.5);
 			transition: 0.5s ease;
 			overflow: hidden;
-			background: inherit;
 			background-attachment: fixed;
-		}
-		.links:before{
-			content: "";
-			background: inherit;
-			position: absolute;
-			top: -10%;
-			height: 120%;
-			width: 120%;
-			display: block;
-			left: -10%;
-			box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.3);
- 			filter: blur(10px);
+			background-color: rgba(255,255,255,1);
 		}
 		@media screen and (max-width: 500px) {
   			.links {
   				top: 12%;
-  				height: 86%;
-  				left: 20%;
-  				width: 60%;
-  				background-color: rgba(255,255,255,0.6);
+  				height: 88%;
+  				left: 15%;
+  				width: 70%;
+  				background-color: rgba(255,255,255,1);
+  				box-shadow: none;
     		}
 		}
 		.link-green{
@@ -69,7 +66,7 @@
 		@media screen and (max-width: 500px) {
   			.link-green {
   				height: 26.66%;
-  				top: 10%;
+  				margin-bottom: 10px;
     		}
 		}
 		.grb{
@@ -78,25 +75,27 @@
 			margin-left: auto;
 			margin-right: auto;
 			width: auto;
-			top: 7%;
+			top: 17%;
   			height: 50%;
   			transition: .5s ease;
 		}
-		.grb:hover{
-			transform: scale(1.2);
+		.grb-blur{
 		}
 		@media screen and (max-width: 500px) {
   			.grb {
   				display: none;
     		}
 		}
+		.grb:hover{
+			transform: scale(1.2);
+		}
 		.back{
 			text-decoration: none;
 			color: white;
 			font-size: calc(12px + 0.3vw);
 			position: absolute;
-			top: 2%;
-			left: 1%;
+			top: 7.5%;
+			left: 40%;
 			height: 5%;
 			width: 20%;
 			text-align: center;
@@ -106,12 +105,14 @@
 		}
 		@media screen and (max-width: 500px) {
   			.back {
-  				top: 2%;
-  				height: 8%;
-  				left: 20%;
-  				width: 60%;
-  				background-color: rgba(255,255,255,0.6);
+  				top: 0%;
+  				height: 12%;
+  				left: 15%;
+  				width: 70%;
+  				background-color: rgba(255,255,255,1);
   				color: black;
+  				box-shadow:  0 0 5px rgba(0,0,0,0.4);
+  				z-index: 10;
     		}
 		}
 		h4{
@@ -133,6 +134,8 @@
 			width: 100%;
 			background-image: url(CLANOVI/zastava-green.jpg);
 			background-size: 100% 100%;
+			box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+			background-attachment: fixed;
 		}
 		.orange{
 			position: absolute;
@@ -141,6 +144,8 @@
 			height: 100%;
 			width: 100%;
 			background-image: url(CLANOVI/zastava-orange.jpg);
+			box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+			background-attachment: fixed;			
 		}
 		.red{
 			position: absolute;
@@ -149,15 +154,18 @@
 			height: 100%;
 			width: 100%;
 			background-image: url(CLANOVI/zastava.jpg);
+			box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+			background-attachment: fixed;			
 		}
 		.all{
 			position: absolute;
-			top: 20%;
+			top: 15%;
 			height: 70%;
 			width: 60%;
 			display: block;
 			left: 20%;
 			background: inherit;
+			background-attachment: fixed;
 			overflow: hidden;
 			box-shadow: 0 0 10px rgba(0,0,0,0.5);
 		}
@@ -201,7 +209,8 @@
 		}
 		@media screen and (max-width: 500px) {
   			.content {
-  				width: 100%;
+  				width: 70%;
+  				left: 15%;
     		}
 		}
 		.next{
@@ -233,11 +242,13 @@
 		@media screen and (max-width: 500px) {
   			.next {
   				background-image: none;
+  				top: 0%;
   				height: 100%;
   				width: 100%;
     		}
 		}@media screen and (max-width: 500px) {
   			.prev {
+  				top: 0%;
   				background-image: none;
   				height: 100%;
   				width: 100%;
@@ -292,6 +303,7 @@
   				background-image: url(CLANOVI/zastava-green.jpg);
   				color: black;
   				z-index: 10;
+  				color: white;
     		}
 		}
 		@media screen and (max-width: 500px) {
@@ -302,6 +314,7 @@
   				background-image: url(CLANOVI/zastava-orange.jpg);
   				color: black;
   				z-index: 10;
+  				color: white;
     		}
 		}
 		@media screen and (max-width: 500px) {
@@ -312,6 +325,7 @@
   				background-image: url(CLANOVI/zastava.jpg);
   				color: black;
   				z-index: 10;
+  				color: white;
     		}
 		}
 		@media screen and (max-width: 500px) {
@@ -319,11 +333,60 @@
   				color: white;
     		}
 		}
-
+		.line-v{
+			position: fixed;
+			right: 20%;
+			top: 7.5%;
+			height: 85%;
+			width: 0%;
+			border-left: 2px solid rgba(255,255,255,1);
+			z-index: 100;
+			box-shadow: 0 0 10px rgba(0,0,0,1);
+			transition: .5s ease;
+		}
+		.line-v2{
+			position: fixed;
+			left: 20%;
+			top: 7.5%;
+			height: 85%;
+			width: 0%;
+			border-right: 2px solid rgba(255,255,255,1);
+			z-index: 10;
+			box-shadow: 0 0 10px rgba(0,0,0,1);
+			transition: .5s ease;
+		}	
+		.line-h{
+			position: fixed;
+			left: 10%;
+			top: 15%;
+			height: 0%;
+			width: 80%;
+			border-top: 2px solid rgba(255,255,255,1);
+			z-index: 10;
+			box-shadow: 0 0 10px rgba(0,0,0,1);
+			transition: .5s ease;
+		}
+		@media screen and (max-width: 500px) {
+  			.line-v {
+  				display: none;
+    		}
+		}
+		@media screen and (max-width: 500px) {
+  			.line-v2 {
+  				display: none;
+    		}
+		}
+		@media screen and (max-width: 500px) {
+  			.line-h {
+  				display: none;
+    		}
+		}
 	</style>
 </head>
 <body>
-
+	<div class="line-v"></div>
+	<div class="line-v2"></div>
+	<div class="line-h"></div>
 	<div class="div" id="start">
 		<img src="CLANOVI/grb.png" class="grb">
 		<a href="index.html" class="back"><h4>POČETNA STRANA</h4></a>
