@@ -12,25 +12,28 @@
 			overflow-y: hidden;
 		}
 		.div{
+			border: 10px solid white;
 			position: absolute;
 			top: 0%;
 			left: 0%;
-			height: 100%;
-			width: 100%;
+			height: calc(100% - 20px);
+			width: calc(100% - 20px);
 			background-image: url(CLANOVI/pozadina.jpg);
-			box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
+			box-shadow: 0 0 10px rgba(0,0,0,0.9) inset;
 			background-attachment: fixed;
 		}
 		@media screen and (max-width: 500px) {
   			.div{
   				background-image: url(POCETNA/zastava-mala.jpg);
-  				background-size: 100% 100%;	
+  				background-size: 100% 100%;
+  				height: 100%;
+  				border: none;	
     		}
 		}
 		.links{
 			text-align: center;
 			position: absolute;
-			top: 70%;
+			top: 80%;
 			left: 40%;
 			height: 5%;
 			width: 20%;
@@ -41,6 +44,7 @@
 			font-size: calc(12px + 0.3vw);
 			box-shadow: 0 0 10px rgba(0,0,0,1);
 			text-decoration: none;
+			z-index: 2;
 		}
 		@media screen and (max-width: 500px) {
   			.links {
@@ -49,7 +53,7 @@
   				left: 15%;
   				width: 70%;
   				background-color: rgba(255,255,255,1);
-  				box-shadow:  0 0 5px rgba(0,0,0,0.4);
+  				box-shadow:  0 0 10px rgba(0,0,0,0.4);
   				display: table;
   				color: black;
   				
@@ -67,9 +71,10 @@
 			margin-left: auto;
 			margin-right: auto;
 			width: auto;
-			top: 17%;
-  			height: 50%;
+			top: 30%;
+  			height: 40%;
   			transition: .5s ease;
+  			z-index: 2;
 		}
 		.grb:hover{
 			transform: scale(1.2);
@@ -79,7 +84,7 @@
 			color: white;
 			font-size: calc(12px + 0.3vw);
 			position: absolute;
-			top: 7.5%;
+			top: 15%;
 			left: 40%;
 			height: 5%;
 			width: 20%;
@@ -87,6 +92,7 @@
 			display: table;
 			transition: 0.5s ease;
 			box-shadow: 0 0 10px rgba(0,0,0,1);
+			z-index: 2;
 		}
 		@media screen and (max-width: 500px) {
   			.grb {
@@ -111,6 +117,7 @@
   				width: calc(70% - 4px);
   				height: auto;
   				border-bottom: 10000px solid white;
+  				box-shadow: 0 0 5px rgba(0,0,0,0.8);
     		}
 		}
 		@media screen and (max-width: 500px) {
@@ -121,7 +128,7 @@
   				width: 70%;
   				background-color: rgba(255,255,255,1);
   				color: black;
-  				box-shadow:  0 0 5px rgba(0,0,0,0.4);
+  				box-shadow:  0 0 10px rgba(0,0,0,0.4);
     		}
 		}
 		h4{
@@ -135,86 +142,40 @@
 		.back:hover h4{
 			color: black;
 		}
-		.line-v{
-			position: fixed;
-			right: 20%;
-			top: 7.5%;
-			height: 85%;
-			width: 0%;
-			border-left: 2px solid rgba(255,255,255,1);
-			z-index: 100;
-			box-shadow: 0 0 10px rgba(0,0,0,1);
-			transition: .5s ease;
-		}
-		.line-v2{
-			position: fixed;
-			left: 20%;
-			top: 7.5%;
-			height: 85%;
-			width: 0%;
-			border-right: 2px solid rgba(255,255,255,1);
-			z-index: 10;
-			box-shadow: 0 0 10px rgba(0,0,0,1);
-			transition: .5s ease;
-		}	
-		.line-h{
-			position: fixed;
-			left: 10%;
-			top: 15%;
-			height: 0%;
-			width: 80%;
-			border-top: 2px solid rgba(255,255,255,1);
-			z-index: 10;
-			box-shadow: 0 0 10px rgba(0,0,0,1);
-			transition: .5s ease;
-		}
-		@media screen and (max-width: 500px) {
-  			.line-v {
-  				display: none;
-    		}
-		}
-		@media screen and (max-width: 500px) {
-  			.line-v2 {
-  				display: none;
-    		}
-		}
-		@media screen and (max-width: 500px) {
-  			.line-h {
-  				display: none;
-    		}
-		}
 		.raspored{
 			top: 100%;
-			height: 100%;
+			height: calc(100% - 20px);
+			width: calc(100% - 20px);
 			left: 0%;
-			width: 100%;
 			position: absolute;
-			background-image: url(CLANOVI/zastava.jpg);
-			box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
-			background-size: 100% 100%;	
+			border: 10px solid white;
+			background-image: url(CLANOVI/pozadina.jpg);
+			box-shadow: 0 0 10px rgba(0,0,0,0.9) inset;
 			background-attachment: fixed;
-			overflow-y: auto;
 		}
 		@media screen and (max-width: 500px) {
   			.raspored{
  			background-image: url(POCETNA/zastava-mala.jpg);
  			background-size: 100% 100%;	
- 				background-attachment: fixed;
+ 			background-attachment: fixed;
     		}
 		}
 		.raspored-unut{
-			top: 15%;
+			top: 10%;
 			position: absolute;
-			height: 85%;
+			height: 88%;
 			left: 20%;
 			width: 60%;
 			background-color: white;
+			overflow-y: auto;
 		}
 	@media screen and (max-width: 500px) {
   			.raspored-unut{
   				top: 10%;
   				left: 15%;
   				width: 70%;
+  				height: 90%;
+  				box-shadow:  0 0 10px rgba(0,0,0,0.4);
     		}
 		}
 		.table{
@@ -245,62 +206,112 @@
 	}
 	.sat{
 		height: 30px;
-  		background-color: red;
+  		background-image: url(CLANOVI/zastava.jpg);
+  		background-attachment: fixed;
   		color: white;
   		text-align: center;
-  		border: 2px solid red;
   		transition: 0.5s;
   		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+  		box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
 	}
+	@media screen and (max-width: 500px) {
+  			.sat{
+  				background-image: url(POCETNA/zastava-mala.jpg);
+  				background-attachment: fixed;
+    		}
+		}
 	.sat:hover{
+		background-image: none;
 		background-color: white;
 		color: black;
 	}
 	.sat1{
 		height: 30px;
-  		background-color: rgba(255,165,0,1);
-  		color: white;
+  		background-image: url(CLANOVI/zastava-orange.jpg);
+  		background-attachment: fixed;
+  		color: black;
   		text-align: center;
-  		border: 2px solid orange;
   		transition: 0.5s;
   		padding: 0px;
   		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+  		box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
 	}
+	@media screen and (max-width: 500px) {
+  			.sat1{
+  				background-image: url(POCETNA/zastava-mala.jpg);
+  				background-attachment: fixed;
+  				color: white;
+    		}
+		}
 	.sat1:hover{
+		background-image: none;
 		background-color: white;
 		color: black;
 	}
 	.sat2{
 		height: 30px;
-  		background-color: rgba(0,255,0,1);
+  		background-image: url(CLANOVI/zastava-green.jpg);
+  		background-attachment: fixed;
   		color: white;
   		text-align: center;
-  		border: 2px solid rgba(0,255,0,1);
   		transition: 0.5s;
   		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+  		box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
 	}
+	@media screen and (max-width: 500px) {
+  			.sat2{
+  				background-image: url(POCETNA/zastava-mala.jpg);
+  				background-attachment: fixed;
+    		}
+		}
 	.sat2:hover{
+		background-image: none;
 		background-color: white;
 		color: black;
 	}
 	.satra{
 		height: 50px;
-  		background-color: rgba(255,0,0,1);
+  		background-image: url(CLANOVI/zastava.jpg);
+  		background-attachment: fixed;
   		color: white;  		
   		text-align: center;
+  		box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
 	}
+	@media screen and (max-width: 500px) {
+  			.satra{
+  				background-image: url(POCETNA/zastava-mala.jpg);
+  				background-attachment: fixed;
+    		}
+		}
 	.satra1{
 		height: 50px;
-  		background-color: rgba(255,165,0,1);
-  		color: white;		
+  		background-image: url(CLANOVI/zastava-orange.jpg);
+  		background-attachment: fixed;
+  		color: black;		
   		text-align: center;
+  		box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
 	}
+	@media screen and (max-width: 500px) {
+  			.satra1{
+  				background-image: url(POCETNA/zastava-mala.jpg);
+  				background-attachment: fixed;
+  				color: white;
+    		}
+		}
 	.satra2{
 		height: 50px;
-  		background-color: rgba(0,255,0,1);
+  		background-image: url(CLANOVI/zastava-green.jpg);
+  		background-attachment: fixed;
   		color: white; 		
   		text-align: center;
+  		box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
 	}
+	@media screen and (max-width: 500px) {
+  			.satra2{
+  				background-image: url(POCETNA/zastava-mala.jpg);
+  				background-attachment: fixed;
+    		}
+		}
 	.desc{
 			position: absolute;
 			top: 0%;
@@ -371,7 +382,6 @@
 			height: 100%;
 			width: 30%;
 			display: inline-block;
-			background-color: black;
 			margin-right: 5px;
 			margin-left: 5px;
 			margin-top: 10px;
@@ -386,7 +396,14 @@
 				margin-right: 0px;
 				margin-left: 0px;
 				margin-top: 0px;
+				box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
     		}
+		}
+		#lok-1{
+			box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
+			background-image: url(CLANOVI/lok-1.jpg);
+			background-size: 100% auto;
+			background-repeat: no-repeat;
 		}
 	</style>
 </head>
@@ -458,9 +475,9 @@
 			<h3 style="text-align: center; display: block;">Lokacije</h3>
 			<p style="padding-left: 10px; padding-right: 10px; display: block;">Treninzi se održavaju na tri različite lokacije:</p>
 		<div class="lok-cont">
-			<div class="lokacija"></div>
-			<div class="lokacija"></div>
-			<div class="lokacija"></div>
+			<div class="lokacija" id="lok-1"></div>
+			<div class="lokacija" id="lok-1"></div>
+			<div class="lokacija" id="lok-1"></div>
 		</div>
 	</div>
 
