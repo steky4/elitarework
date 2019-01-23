@@ -27,6 +27,8 @@
   				background-image: url(POCETNA/zastava-mala.jpg);
   				background-size: 100% 100%;	
   				border: none;
+  				height: 100%;
+  				width: 100%;
     		}
 		}
 		.links{
@@ -138,34 +140,58 @@
 		}
 		.green{
 			position: absolute;
+			border: 10px solid white;
 			top: 100%;
 			left: 0%;
-			height: 100%;
-			width: 100%;
+			height: calc(100% - 20px);
+			width: calc(100% - 20px);
 			background-image: url(CLANOVI/zastava-green.jpg);
 			background-size: 100% 100%;
 			box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
 			background-attachment: fixed;
 		}
+		@media screen and (max-width: 500px) {
+  			.green {
+  				border: none;
+  				width: 100%;
+  				height: 100%;
+    		}
+		}
 		.orange{
 			position: absolute;
+			border: 10px solid white;
 			top: 200%;
 			left: 0%;
-			height: 100%;
-			width: 100%;
+			height: calc(100% - 20px);
+			width: calc(100% - 20px);
 			background-image: url(CLANOVI/zastava-orange.jpg);
 			box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
 			background-attachment: fixed;			
 		}
+		@media screen and (max-width: 500px) {
+  			.orange {
+  				border: none;
+  				width: 100%;
+  				height: 100%;
+    		}
+		}
 		.red{
 			position: absolute;
+			border: 10px solid white;
 			top: 300%;
 			left: 0%;
-			height: 100%;
-			width: 100%;
+			height: calc(100% - 20px);
+			width: calc(100% - 20px);
 			background-image: url(CLANOVI/zastava.jpg);
 			box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
 			background-attachment: fixed;			
+		}
+		@media screen and (max-width: 500px) {
+  			.red {
+  				border: none;
+  				width: 100%;
+  				height: 100%;
+    		}
 		}
 		.all{
 			position: absolute;
@@ -216,12 +242,6 @@
 			width: 100%;
 			height: 100%;
 			display: inline-block;
-		}
-		@media screen and (max-width: 500px) {
-  			.content {
-  				width: 70%;
-  				left: 15%;
-    		}
 		}
 		.next{
 			position: relative;
@@ -282,14 +302,14 @@
 			position: absolute;
 			top: 0%;
 			left: 0%;
-			height: 10%;
+			height: 15%;
 			width: 100%;
 		}
 		.gore{
 			position: relative;
 			display: block;
-			top: 20%;
-			height: 60%;
+			top: 30%;
+			height: 40%;
 			width: 20%;
 			margin-left: auto;
 			margin-right: auto;
@@ -310,10 +330,8 @@
   				top: 0%;
    				height: 100%;
   				width: 100%;
-  				background-image: url(CLANOVI/zastava-green.jpg);
-  				color: black;
   				z-index: 10;
-  				color: white;
+  				background-color: white;
     		}
 		}
 		@media screen and (max-width: 500px) {
@@ -321,10 +339,9 @@
   				top: 0%;
    				height: 100%;
   				width: 100%;
-  				background-image: url(CLANOVI/zastava-orange.jpg);
+  				background-color: white;
   				color: black;
   				z-index: 10;
-  				color: white;
     		}
 		}
 		@media screen and (max-width: 500px) {
@@ -332,15 +349,14 @@
   				top: 0%;
    				height: 100%;
   				width: 100%;
-  				background-image: url(CLANOVI/zastava.jpg);
+  				background-color: white;
   				color: black;
   				z-index: 10;
-  				color: white;
     		}
 		}
 		@media screen and (max-width: 500px) {
   			#a {
-  				color: white;
+  				color: black;
     		}
 		}
 	</style>

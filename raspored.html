@@ -27,6 +27,7 @@
   				background-image: url(POCETNA/zastava-mala.jpg);
   				background-size: 100% 100%;
   				height: 100%;
+  				width: 100%;
   				border: none;	
     		}
 		}
@@ -117,7 +118,7 @@
   				width: calc(70% - 4px);
   				height: auto;
   				border-bottom: 10000px solid white;
-  				box-shadow: 0 0 5px rgba(0,0,0,0.8);
+  				box-shadow: 0 0 10px rgba(0,0,0,0.9);
     		}
 		}
 		@media screen and (max-width: 500px) {
@@ -158,6 +159,10 @@
  			background-image: url(POCETNA/zastava-mala.jpg);
  			background-size: 100% 100%;	
  			background-attachment: fixed;
+ 			width: 100%;
+ 			height: 100%;
+ 			border: none;
+
     		}
 		}
 		.raspored-unut{
@@ -168,6 +173,7 @@
 			width: 60%;
 			background-color: white;
 			overflow-y: auto;
+			box-shadow:  0 0 10px rgba(0,0,0,0.9);
 		}
 	@media screen and (max-width: 500px) {
   			.raspored-unut{
@@ -175,7 +181,6 @@
   				left: 15%;
   				width: 70%;
   				height: 90%;
-  				box-shadow:  0 0 10px rgba(0,0,0,0.4);
     		}
 		}
 		.table{
@@ -329,7 +334,7 @@
 			margin-right: auto;
 			cursor: pointer;
 			background-size: cover;
-			box-shadow: 0 0 10px rgba(0,0,0,0.5);
+			box-shadow: 0 0 10px rgba(0,0,0,0.9);
 			font-size: calc(12px + 0.4vw);
 			transition: .5s;
 			color: white;
@@ -371,7 +376,6 @@
     		}
 		}
 		.lok-cont{
-			position: absolute;
 			height: 70%;
 			left: 0%;
 			width: 100%;
@@ -382,28 +386,68 @@
 			height: 100%;
 			width: 30%;
 			display: inline-block;
+			color: white;
 			margin-right: 5px;
 			margin-left: 5px;
 			margin-top: 10px;
+			text-align: left;
+			padding: 10px;
+			overflow-y: auto;
 		}
 		@media screen and (max-width: 500px) {
   			.lokacija {
-  				height: 160%;
+  				height: 250%;
 				width: 100%;
 				display: block;
-				border-top: 5px solid white;
-				border-bottom: 5px solid white;
 				margin-right: 0px;
 				margin-left: 0px;
 				margin-top: 0px;
-				box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
+				color: black;
+				background-color: white;
+				background-image: none;
+				overflow-y: hidden;
     		}
 		}
 		#lok-1{
 			box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
-			background-image: url(CLANOVI/lok-1.jpg);
-			background-size: 100% auto;
-			background-repeat: no-repeat;
+			background-image: url(CLANOVI/zastava.jpg);
+			background-attachment: fixed;
+		}
+		@media screen and (max-width: 500px) {
+  			#lok-1{
+				background-color: white;
+				background-image: none;
+				box-shadow: inset 0 0 10px rgba(0,0,0,0);
+    		}
+		}
+		#lok-2{
+			box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
+			background-image: url(CLANOVI/zastava-orange.jpg);
+			background-attachment: fixed;
+			color: black;
+		}
+
+		@media screen and (max-width: 500px) {
+  			#lok-2{
+				background-color: white;
+				background-image: none;
+				box-shadow: inset 0 0 10px rgba(0,0,0,0);
+    		}
+		}
+		#lok-3{
+			box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
+			background-image: url(CLANOVI/zastava-green.jpg);
+			background-attachment: fixed;
+		}
+		@media screen and (max-width: 500px) {
+  			#lok-3{
+				background-color: white;
+				background-image: none;
+				box-shadow: inset 0 0 10px rgba(0,0,0,0);
+    		}
+		}
+		.lokacija h3{
+			text-align: center;
 		}
 	</style>
 </head>
@@ -475,9 +519,30 @@
 			<h3 style="text-align: center; display: block;">Lokacije</h3>
 			<p style="padding-left: 10px; padding-right: 10px; display: block;">Treninzi se održavaju na tri različite lokacije:</p>
 		<div class="lok-cont">
-			<div class="lokacija" id="lok-1"></div>
-			<div class="lokacija" id="lok-1"></div>
-			<div class="lokacija" id="lok-1"></div>
+			<div class="lokacija" id="lok-1">
+				<h3>OŠ "Jovan Popović"</h3>
+				Osnovna škola “Jovan Popović” se nalazi u Inđiji. Škola je osnovana 1962. godine. Škola poseduje 15 specijalizovanih učionica, kabinete, biblioteku sa preko 8500 knjiga i čitaonicu, medijateku, salu za fizičko, sportske terene, letnju učionicu i pozornicu. Školu pohađa preko 500 učenika. Nastava se izvodi u 2 smene. Nastava se izvodi na srpskom jeziku.
+				<br><br>
+				<strong>Adresa: Kralja Petra Prvog 124, Inđija</strong>
+				<br><br>
+				<strong>Telefon: 022/561-330</strong>
+
+			</div>
+			<div class="lokacija" id="lok-2">
+				<h3>OŠ "Petar Kočić"</h3>
+				Osnovna škola “Petar Kočić” se nalazi u Inđiji. Postoje podaci da je škola osnovana 1782. godine. Školu pohađa oko 1000 učenika, raspoređenih u 40 odeljenja. Pored matične škole u Inđiji, nastava se izvodi i u izdvojenom odeljenju, na Ljukovu. U školi se pored redovne nastave organizuju i vannastavne aktivnosti. U sklopu vannastavnih aktivnosti organizovan je rad sekcija: dramska i recitatorska, streljačka, košarkaška i druge.<br><br>
+				<strong>Adresa: Cara Dušana 9, Inđija</strong>
+				<br><br>
+				<strong>Telefon: 022/561-540</strong>
+			</div>
+			<div class="lokacija" id="lok-3">
+				<h3>Sport Caffe</h3>
+				Sport Caffe je kafić u Inđiji, u čijem sklopu se nalazi hala sa terenom za košarku, rukomet i tenis.
+				<br><br>
+				<strong>Adresa: Novosadska bb, Inđija</strong>
+				<br><br>
+				<strong>Telefon: 063/727-0327</strong>
+			</div>
 		</div>
 	</div>
 
