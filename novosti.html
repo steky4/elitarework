@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>novosti</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+			overflow-y: hidden;
+		}
+		.div{
+			border: 10px solid white;
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			height: calc(100% - 20px);
+			width: calc(100% - 20px);
+			background-image: url(CLANOVI/pozadina.jpg);
+			box-shadow: 0 0 10px rgba(0,0,0,0.9) inset;
+			background-attachment: fixed;
+		}
+		@media screen and (max-width: 500px) {
+  			.div{
+  				background-image: url(POCETNA/zastava-mala.jpg);
+  				background-size: 100% 100%;
+  				height: 100%;
+  				width: 100%;
+  				border: none;	
+    		}
+		}
+		.back{
+			text-decoration: none;
+			color: white;
+			font-size: calc(12px + 0.3vw);
+			position: fixed;
+			top: calc(2% + 10px);
+			height: 5%;
+			left: 40%;
+			width: 20%;
+			text-align: center;
+			display: table;
+			transition: 0.5s ease;
+			z-index: 2;
+		}
+		@media screen and (max-width: 500px) {
+		  			.back {
+		  				top: 0%;
+		  				height: 10%;
+		  				left: 15%;
+		  				width: 70%;
+		  				background-color: rgba(255,255,255,1);
+		  				color: black;
+		  				box-shadow:  0 0 10px rgba(0,0,0,0.4);
+		    		}
+				}
+		.back:hover{
+					background-color: white;
+					box-shadow: 0 0 10px rgba(0,0,0,1);
+				}
+		.back:hover h4{
+					color: black;
+				}
+		.back h4{
+			display: table-cell;
+			vertical-align: middle;
+		}
+		.novosti{
+			position: fixed;
+			left: 30%;
+			top: calc(9% + 10px);
+			width: 40%;
+			height: 85%;			
+				}
+		@media screen and (max-width: 500px) {
+		  			.novosti {
+		  				top: 10%;
+		  				height: 90%;
+		  				left: 15%;
+		  				width: 70%;
+		  				background-color: rgba(255,255,255,1);
+		  				color: black;
+		  				box-shadow:  0 0 10px rgba(0,0,0,0.4);
+		    		}
+				}
+		.red-1{
+			position: absolute;
+			left: 0%;
+			top: 15%;
+			width: 100%;
+			height: 80%;
+			overflow-y: auto;
+		}
+		@media screen and (max-width: 500px) {
+		  			.red-1 {
+		  				top: 10%;
+		  				height: 85%;
+		  				left: 0%;
+		  				width: 100%;
+		  				background-color: rgba(255,255,255,1);
+		  				color: black;
+		  				box-shadow:  0 0 10px rgba(0,0,0,0.4);
+		    		}
+				}
+		.template{
+			height: 15%;
+			position: relative;
+			top: 0%;
+			width: 100%;
+			transition: .5s ease;
+		}
+		.template:hover{
+			background-color: white;
+			box-shadow: 0 0 10px rgba(0,0,0,1);
+		}
+		.template:hover .link{
+			color: black;
+		}
+		.img{
+			position: absolute;
+			height: 80%;
+			top: 10%;
+			left: 2%;
+			width: auto;
+			background-color: white;
+		}
+		.link{
+			height: 100%;
+			width: 60%;
+			left: 25%;
+			top: 0%;
+			position: absolute;
+			color: white;
+			display: table;
+		}
+		@media screen and (max-width: 500px) {
+		  			.link {
+		  				left: 30%;
+		  				color: black;
+		  				font-size: calc(10px + 0.3vw);
+		    		}
+				}
+		.tab{
+			position: absolute;
+			background-color: white;
+			height: 15%;
+			width: 100%;
+			top: 0%;
+			left: 0%;
+			display: table;
+			box-shadow: 0 0 10px rgba(0,0,0,1);
+			font-size: calc(12px + 0.3vw);
+		}
+		@media screen and (max-width: 500px) {
+		  			.tab {
+		  				height: 10%;
+		  				z-index: 10;
+		  				box-shadow: 0 0 10px rgba(0,0,0,0.4);
+		    		}
+				}
+		.unut-tab{
+			width: 50%;
+			text-align: center;
+			display: table-cell;
+			vertical-align: middle;
+		}
+		@media screen and (max-width: 500px) {
+		  			.unut-tab {
+		  				width: 60%;
+		    		}
+				}
+		.link-tab{
+			position: absolute;
+			top: 25%;
+			left: 50%;
+			height: 50%;
+			display: table;
+			width: 25%;
+			border-left: 1px solid gray;
+		}
+		@media screen and (max-width: 500px) {
+		  			.link-tab {
+		  				width: 20%;
+		  				border-left: none;
+		    		}
+				}
+		.link-tab-1{
+			position: absolute;
+			top: 25%;
+			left: 75%;
+			height: 50%;
+			display: table;
+			width: 25%;
+			border-left: 1px solid gray;
+		}
+		@media screen and (max-width: 500px) {
+		  			.link-tab-1 {
+		  				width: 20%;
+		  				border-left: none;
+		    		}
+				}
+		.slika{
+			position: absolute;
+			right: 5%;
+			top: 10%;
+			height: 80%;
+			width: auto;
+			opacity: 1;
+			transition: .5s ease;
+		}
+		@media screen and (max-width: 500px) {
+		  			.slika {
+		  				top: 0%;
+		  				height: 100%;
+		  				display: block;
+		  				margin-right: auto;
+		  				margin-left: auto;		    		
+		  			}
+				}
+		#date{
+			color: gray;
+			font-size: calc(4px + 0.4vw);
+		}
+		@media screen and (max-width: 500px) {
+		  			#date {
+		  				 font-size: calc(10px + 0.4vw);   		
+		  			}
+				}
+		.design-by{
+			bottom: 0%;
+			position: absolute;
+			height: 5%;
+			width: 100%;
+			left: 0%;
+			background-color: white;
+			box-shadow: 0 0 10px rgba(0,0,0,1);
+			display: table;
+		}
+		.a{
+			display: auto;
+		}
+		@media screen and (max-width: 500px) {
+		  			.a {
+		  				display: none;
+		    		}
+				}
+	</style>
+</head>
+<body>
+	<div class="div" id="start">
+		<a href="index.html" class="back"><h4>POČETNA STRANA</h4></a>
+		<div class="novosti">
+			<div class="tab"><h3 class="unut-tab">NOVOSTI<br><span id="date"></span></h3>
+				<a class="link-tab" href="https://www.instagram.com/teniskiklubelita/"><h4 class="a" style="text-decoration: none; color: black; padding-left: 10px; text-decoration-style: none;">INSTAGRAM</h4><img class="slika" src="POCETNA/instagram.png"></a>
+				<a class="link-tab-1" href="https://www.facebook.com/kkindjijakotur"><h4 class="a" style="text-decoration: none; color: black; padding-left: 10px; text-decoration-style: none;">FACEBOOK</h4><img class="slika" src="POCETNA/facebook.png"></a>
+			</div>
+			<div class="red-1">
+				<div class="template"><img src="img.jpg" class="img"><a class="link" style="text-decoration: none;" href="template.html"><h4 style="display: table-cell; vertical-align: middle;">NASLOV VESTI</h4></a></div>
+				<div class="template"><img src="img.jpg" class="img"><a class="link" style="text-decoration: none;" href="template.html"><h4 style="display: table-cell; vertical-align: middle;">NASLOV VESTI</h4></a></div>
+				<div class="template"><img src="img.jpg" class="img"><a class="link" style="text-decoration: none;" href="template.html"><h4 style="display: table-cell; vertical-align: middle;">NASLOV VESTI</h4></a></div>
+				<div class="template"><img src="img.jpg" class="img"><a class="link" style="text-decoration: none;" href="template.html"><h4 style="display: table-cell; vertical-align: middle;">NASLOV VESTI</h4></a></div>
+				<div class="template"><img src="img.jpg" class="img"><a class="link" style="text-decoration: none;" href="template.html"><h4 style="display: table-cell; vertical-align: middle;">NASLOV VESTI</h4></a></div>
+				<div class="template"><img src="img.jpg" class="img"><a class="link" style="text-decoration: none;" href="template.html"><h4 style="display: table-cell; vertical-align: middle;">NASLOV VESTI</h4></a></div>
+				<div class="template"><img src="img.jpg" class="img"><a class="link" style="text-decoration: none;" href="template.html"><h4 style="display: table-cell; vertical-align: middle;">NASLOV VESTI</h4></a></div>
+				<div class="template"><img src="img.jpg" class="img"><a class="link" style="text-decoration: none;" href="template.html"><h4 style="display: table-cell; vertical-align: middle;">NASLOV VESTI</h4></a></div>
+				<div class="template"><img src="img.jpg" class="img"><a class="link" style="text-decoration: none;" href="template.html"><h4 style="display: table-cell; vertical-align: middle;">NASLOV VESTI</h4></a></div>
+			</div>
+			<div class="design-by"><a href="#" style="text-decoration: none; color: gray; vertical-align: middle;display: table-cell; padding-left: 20px;">Dev by: Steky</a></div>
+		</div>
+	</div>
+	<script type="text/javascript">
+			n =  new Date();
+			y = n.getFullYear();
+			m = n.getMonth() + 1;
+			d = n.getDate();
+			document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
+	</script>
+</body>
+</html>
