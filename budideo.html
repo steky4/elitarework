@@ -285,6 +285,7 @@
 		.menu{
 			text-align: center;
 			position: fixed;
+			font-size: calc(12px + 0.3vw);
 			left: 3%;
 			top: 40%;
 			width: 15%;
@@ -294,6 +295,18 @@
 			transition: .5s ease;
 			border: none;
 			z-index: 10;
+		}
+
+		@media screen and (max-width: 500px) {
+		.belo{
+			display: block;
+			position: absolute;
+			top: 45%;
+			left: 15%;
+			width: 70%;
+			height: 55%;
+			background-color: white;
+			}
 		}
 		@media screen and (max-width: 500px) {
   			.menu {
@@ -373,7 +386,6 @@
   				margin-left: 0px;
   				margin-right: 0px;
   				box-shadow: 0 0 0px rgba(0,0,0,0);
-  				border-bottom: 1px solid black;
   				overflow-y: auto;
     		}
 		}
@@ -430,7 +442,7 @@
 			<a href="#div2" class="li"><h4>TRENERI</h4></a>
 			<a href="#div3" class="li"><h4>KONTAKT</h4></a>
 		</div>
-
+		<div class="belo"></div>
 	</div>
 
 	<div class="div" id="div">
