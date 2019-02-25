@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prijatelji Kluba</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		body{
+			font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+			height: 200%;
+			overflow-y: hidden;
+			overflow-x: hidden;
+		}
+		.div{
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			height: 100%;
+			width: 100%;
+			background-image: url(POCETNA/zastava.jpg);
+			box-shadow: 0 0 10px rgba(0,0,0,0.9) inset;
+			background-attachment: fixed;
+		}
+		@media screen and (max-width: 500px) {
+  			.div{
+  				background-image: url(POCETNA/zastava-mala.jpg);
+  				background-size: 100% 100%;
+  				height: 100%;
+  				width: 100%;
+  				border: none;	
+    		}
+		}
+		.back{
+			text-decoration: none;
+			color: white;
+			font-size: calc(12px + 0.3vw);
+			position: absolute;
+			top: 5%;
+			left: 40%;
+			height: 5%;
+			width: 20%;
+			text-align: center;
+			display: table;
+			transition: 0.5s ease;
+			
+			z-index: 2;
+		}
+		@media screen and (max-width: 500px) {
+  			.back {
+  				top: 0%;
+  				height: 15%;
+  				left: 15%;
+  				width: 70%;
+  				background-color: rgba(255,255,255,1);
+  				color: black;
+  				box-shadow:  0 0 10px rgba(0,0,0,0.4);
+    		}
+		}
+		h4{
+			display: table-cell;
+			vertical-align: middle;
+			transition: 0.5s ease;
+		}
+		.back:hover{
+			background-color: white;
+			box-shadow: 0 0 10px rgba(0,0,0,1);
+		}
+		.back:hover h4{
+			color: black;
+		}
+		.grb{
+			display: block;
+			position: relative;
+			margin-left: auto;
+			margin-right: auto;
+			width: auto;
+			top: 20%;
+  			height: 40%;
+  			transition: .5s ease;
+  			z-index: 2;
+		}
+		.grb:hover{
+			transform: scale(1.2);
+		}
+		@media screen and (max-width: 500px) {
+  			.grb{
+  				display: none;
+    		}
+		}
+		.mid{
+			position: absolute;
+			top: 70%;
+			height: 25%;
+			background-color: white;
+			width: 100%;
+			left: 0%;
+			box-shadow: 0 0 10px rgba(0,0,0,1);		
+		}
+		@media screen and (max-width: 500px) {
+  			.mid{
+  				top: 15%;
+  				height: 85%;
+  				left: 15%;
+  				width: 70%;
+  				background-color: rgba(255,255,255,1);
+  				color: black;
+  				box-shadow:  0 0 10px rgba(0,0,0,0.4);
+  				overflow-y: auto;
+  				overflow-x: hidden;
+    		}
+		}
+		.con{
+			position: absolute;
+			left: 0%;
+			top: 0%;
+			width: 15%;
+			height: 100%;
+			text-align: center;
+		}
+		@media screen and (max-width: 500px) {
+  			.con{
+  				width: 100%;
+    		}
+		}
+		.cont-count{
+			position: relative;
+			margin-top: 5%;
+			display: block;
+  			margin-left: auto;
+  			margin-right: auto;
+			width: 15vh;
+			height: 15vh;
+			background-image: url(POCETNA/zastava.jpg);
+			background-attachment: fixed;
+			text-align: center;
+			color: white;
+			box-shadow: inset 0 0 10px rgba(0,0,0,1);
+			border-radius: 50%;
+		}
+		@media screen and (max-width: 500px) {
+  			.cont-count{
+  			background-image: url(POCETNA/zastava-mala.jpg);
+  			left: auto;
+  			top: auto;
+    		}
+		}
+		
+		.count{
+			font-size: calc(40px + 0.2vw);
+			display: table-cell;
+			vertical-align: middle;
+			text-shadow: 0 0 15px rgba(0,0,0,1);
+		}
+		.naslov{
+			font-size: calc(12px + 0.3vw);
+			padding-top: 20px;
+			text-align: center;
+		}
+		@media screen and (max-width: 500px) {
+  			.naslov{
+  			padding-left: 0%;
+  			text-align: center;
+    		}
+		}
+		.container{
+			position: absolute;
+			bottom: 0%;
+			width: 90%;
+			left: 15%;
+			height: 100%;
+			overflow-x: scroll;
+			overflow-y: hidden;
+			white-space: nowrap;
+		}
+		@media screen and (max-width: 500px) {
+  			.container{
+  			top: 30%;
+  			left: 10%;
+  			width: 80%;
+  			height: 500%;
+  			overflow-x: hidden;
+    		}
+		}
+		.sqr{
+			display: inline-block;
+			position: relative;
+			height: 100%;
+			width: 25%;
+		}
+		@media screen and (max-width: 500px) {
+  			.sqr{
+  			display: block;
+  			left: 10%;
+  			width: 80%;
+  			height: 10%;
+  			border-bottom: 1px solid grey;	
+    		}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="div">
+		<img src="CLANOVI/grb.png" class="grb">
+		<a href="index.html" class="back"><h4>POČETNA STRANA</h4></a>
+		<div class="mid">
+				
+				<div class="con"><div class="naslov"><strong>PRIJATELJI KLUBA</strong></div><div class="cont-count"><div style="display: table; height: 100%; width: 100%;"><span class="count">50</span></div></div></div>
+				<div class="container">
+					<a class="sqr"></a>
+					<a class="sqr"></a>
+					<a class="sqr"></a>
+					<a class="sqr"></a>
+					<a class="sqr"></a>
+					<a class="sqr"></a>
+					<a class="sqr"></a>
+					<a class="sqr"></a>
+					<a class="sqr"></a>
+					<a class="sqr"></a>
+				</div>
+		</div>
+	</div>
+
+</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$('.count').each(function () {
+		    $(this).prop('Counter',0).animate({
+		        Counter: $(this).text()
+		    }, {
+		        duration: 3000,
+		        easing: 'swing',
+		        step: function (now) {
+		            $(this).text(Math.ceil(now));
+		        }
+		    });
+		});
+		</script>
+</html>

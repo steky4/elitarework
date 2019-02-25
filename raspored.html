@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Članovi Kluba</title>
+	<title>Raspored Treninga</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,14 +12,12 @@
 			overflow-y: hidden;
 		}
 		.div{
-			border: 10px solid white;
 			position: absolute;
 			top: 0%;
 			left: 0%;
-			height: calc(100% - 20px);
-			width: calc(100% - 20px);
-			background-image: url(CLANOVI/pozadina.jpg);
-			box-shadow: 0 0 10px rgba(0,0,0,0.9) inset;
+			height: 100%;
+			width: 100%;
+			background-image: url(POCETNA/zastava.jpg);
 			background-attachment: fixed;
 		}
 		@media screen and (max-width: 500px) {
@@ -42,8 +40,7 @@
 			overflow: hidden;
 			display: table;
 			color: white;
-			font-size: calc(12px + 0.3vw);
-			
+			font-size: calc(12px + 0.3vw);			
 			text-decoration: none;
 			z-index: 2;
 		}
@@ -147,13 +144,11 @@
 		}
 		.raspored{
 			top: 100%;
-			height: calc(100% - 20px);
-			width: calc(100% - 20px);
+			height: 100%;
+			width: 100%;
 			left: 0%;
 			position: absolute;
-			border: 10px solid white;
-			background-image: url(CLANOVI/pozadina.jpg);
-			box-shadow: 0 0 10px rgba(0,0,0,0.9) inset;
+			background-image: url(POCETNA/zastava.jpg);
 			background-attachment: fixed;
 			overflow: hidden;
 		}
@@ -180,7 +175,7 @@
 		}
 	@media screen and (max-width: 500px) {
   			.raspored-unut{
-  				top: 10%;
+  				top: 15%;
   				left: 15%;
   				width: 70%;
   				height: 90%;
@@ -214,17 +209,15 @@
 	}
 	.sat{
 		height: 30px;
-  		background-image: url(CLANOVI/zastava.jpg);
+  		background-color: rgba(200,0,0,1);
   		background-attachment: fixed;
   		color: white;
   		text-align: center;
   		transition: 0.5s;
   		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-  		box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
 	}
 	@media screen and (max-width: 500px) {
   			.sat{
-  				background-image: url(POCETNA/zastava-mala.jpg);
   				background-attachment: fixed;
     		}
 		}
@@ -232,21 +225,20 @@
 		background-image: none;
 		background-color: white;
 		color: black;
+		border: 2px solid rgba(200,0,0,1);
 	}
 	.sat1{
 		height: 30px;
-  		background-image: url(CLANOVI/zastava-orange.jpg);
+  		background-color: orange;
   		background-attachment: fixed;
-  		color: black;
+  		color: white;
   		text-align: center;
   		transition: 0.5s;
   		padding: 0px;
   		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-  		box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
 	}
 	@media screen and (max-width: 500px) {
   			.sat1{
-  				background-image: url(POCETNA/zastava-mala.jpg);
   				background-attachment: fixed;
   				color: white;
     		}
@@ -255,20 +247,19 @@
 		background-image: none;
 		background-color: white;
 		color: black;
+		border: solid 2px orange;
 	}
 	.sat2{
 		height: 30px;
-  		background-image: url(CLANOVI/zastava-green.jpg);
+  		background-color: green;
   		background-attachment: fixed;
   		color: white;
   		text-align: center;
   		transition: 0.5s;
   		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-  		box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
 	}
 	@media screen and (max-width: 500px) {
   			.sat2{
-  				background-image: url(POCETNA/zastava-mala.jpg);
   				background-attachment: fixed;
     		}
 		}
@@ -276,56 +267,58 @@
 		background-image: none;
 		background-color: white;
 		color: black;
+		border: 2px solid green;
 	}
 	.satra{
 		height: 50px;
-  		background-image: url(CLANOVI/zastava.jpg);
+  		background-color: rgba(200,0,0,1);
   		background-attachment: fixed;
   		color: white;  		
   		text-align: center;
-  		box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
 	}
 	@media screen and (max-width: 500px) {
   			.satra{
-  				background-image: url(POCETNA/zastava-mala.jpg);
   				background-attachment: fixed;
     		}
 		}
 	.satra1{
 		height: 50px;
-  		background-image: url(CLANOVI/zastava-orange.jpg);
+  		background-color: orange;
   		background-attachment: fixed;
-  		color: black;		
+  		color: white;		
   		text-align: center;
-  		box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
 	}
 	@media screen and (max-width: 500px) {
   			.satra1{
-  				background-image: url(POCETNA/zastava-mala.jpg);
   				background-attachment: fixed;
   				color: white;
     		}
 		}
 	.satra2{
 		height: 50px;
-  		background-image: url(CLANOVI/zastava-green.jpg);
+  		background-color: green;
   		background-attachment: fixed;
   		color: white; 		
   		text-align: center;
-  		box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
 	}
 	@media screen and (max-width: 500px) {
   			.satra2{
-  				background-image: url(POCETNA/zastava-mala.jpg);
   				background-attachment: fixed;
     		}
 		}
 	.desc{
+			text-decoration: none;
+			color: white;
+			font-size: calc(12px + 0.3vw);
 			position: absolute;
-			top: 0%;
-			left: 0%;
-			height: 10%;
-			width: 100%;
+			top: 2.5%;
+			left: 40%;
+			height: 5%;
+			width: 20%;
+			text-align: center;
+			display: table;
+			transition: 0.5s ease;			
+			z-index: 2;
 		}
 		.gore{
 			position: relative;
@@ -342,18 +335,19 @@
 			color: white;
 
 		}
-		.gore:hover{
+		.desc:hover{
 			background-color: white;
 			box-shadow: 0 0 10px rgba(0,0,0,1);
 		}
-		.gore:hover #a{
+		.desc:hover #a{
 			color: black;
 		}
 		@media screen and (max-width: 500px) {
-  			.gore {
+  			.desc {
   				top: 0%;
-   				height: 100%;
+   				height: 15%;
   				width: 70%;
+  				left: 15%;
   				background-color: white;
   				color: black;
   				z-index: 10;
@@ -386,7 +380,7 @@
 			background-color: white;
 		}
 		.lokacija{
-			height: 100%;
+			height: 103%;
 			width: 30%;
 			display: inline-block;
 			color: white;
@@ -412,7 +406,7 @@
 		}
 		#lok-1{
 			box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
-			background-image: url(CLANOVI/zastava.jpg);
+			background-image: url(POCETNA/zastava.jpg);
 			background-attachment: fixed;
 		}
 		@media screen and (max-width: 500px) {
@@ -424,9 +418,9 @@
 		}
 		#lok-2{
 			box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
-			background-image: url(CLANOVI/zastava-orange.jpg);
+			background-image: url(POCETNA/zastava.jpg);
 			background-attachment: fixed;
-			color: black;
+			color: white;
 		}
 
 		@media screen and (max-width: 500px) {
@@ -434,11 +428,12 @@
 				background-color: white;
 				background-image: none;
 				box-shadow: inset 0 0 10px rgba(0,0,0,0);
+				color: black;
     		}
 		}
 		#lok-3{
 			box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
-			background-image: url(CLANOVI/zastava-green.jpg);
+			background-image: url(POCETNA/zastava.jpg);
 			background-attachment: fixed;
 		}
 		@media screen and (max-width: 500px) {
@@ -454,21 +449,23 @@
 	</style>
 </head>
 <body>
-	<div class="line-v"></div>
-	<div class="line-v2"></div>
-	<div class="line-h"></div>
+
 	<div class="div" id="start">
+
 		<img src="CLANOVI/grb.png" class="grb">
 		<img src="CLANOVI/grb-transp.png" class="grb-transp">
 		<a href="index.html" class="back"><h4>POČETNA STRANA</h4></a>
 		<a href="#auto" class="links"><h4>PRIKAŽI RASPORED</h4></a>
+
 	</div>
+
+
 	<div class="raspored" id="auto">
-	<div class="desc">	
-		<a href="#start" class="gore" id="zelena" style="text-decoration: none;">
-				<div style="display: table; height: 100%; width: 100%; position: absolute; text-align: center;"><h4 id="a" style="display: table-cell; vertical-align: middle; transition: .5s;">NAZAD NA ODABIR</h4></div>
-			</a>
-		</div>
+
+
+		<a href="#start" class="desc" id="zelena" style="text-decoration: none;">
+			<div style="display: table; height: 100%; width: 100%; position: absolute; text-align: center;"><h4 id="a" style="display: table-cell; vertical-align: middle; transition: .5s;">NAZAD NA ODABIR</h4></div>
+		</a>
 
 		<div class="raspored-unut">
 				<div class="table" style="overflow-x:auto;">

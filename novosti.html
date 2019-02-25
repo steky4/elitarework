@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>novosti</title>
+	<title>Novosti</title>
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style type="text/css">
 		body{
@@ -9,14 +10,12 @@
 			overflow-y: hidden;
 		}
 		.div{
-			border: 10px solid white;
 			position: absolute;
 			top: 0%;
 			left: 0%;
-			height: calc(100% - 20px);
-			width: calc(100% - 20px);
-			background-image: url(CLANOVI/pozadina.jpg);
-			box-shadow: 0 0 10px rgba(0,0,0,0.9) inset;
+			height: 100%;
+			width: 100%;
+			background-image: url(POCETNA/zastava.jpg);
 			background-attachment: fixed;
 		}
 		@media screen and (max-width: 500px) {
@@ -69,7 +68,10 @@
 			left: 30%;
 			top: calc(9% + 10px);
 			width: 40%;
-			height: 85%;			
+			height: 85%;	
+			background-color: rgba(255,255,255,1);
+			color: black;	
+			box-shadow:  0 0 10px rgba(0,0,0,1);	
 				}
 		@media screen and (max-width: 500px) {
 		  			.novosti {
@@ -110,7 +112,7 @@
 		}
 		.template:hover{
 			background-color: white;
-			box-shadow: 0 0 10px rgba(0,0,0,1);
+			box-shadow: 0 0 10px rgba(0,0,0,0.4);
 		}
 		.template:hover .link{
 			color: black;
@@ -129,7 +131,7 @@
 			left: 25%;
 			top: 0%;
 			position: absolute;
-			color: white;
+			color: black;
 			display: table;
 		}
 		@media screen and (max-width: 500px) {
@@ -147,8 +149,8 @@
 			top: 0%;
 			left: 0%;
 			display: table;
-			box-shadow: 0 0 10px rgba(0,0,0,1);
 			font-size: calc(12px + 0.3vw);
+			box-shadow:  0 0 10px rgba(0,0,0,0.4);	
 		}
 		@media screen and (max-width: 500px) {
 		  			.tab {
@@ -183,6 +185,9 @@
 		  				border-left: none;
 		    		}
 				}
+		.link-tab:hover{
+			background-color: rgba(0,0,0,0.3);
+		}	
 		.link-tab-1{
 			position: absolute;
 			top: 25%;
@@ -198,11 +203,14 @@
 		  				border-left: none;
 		    		}
 				}
+		.link-tab-1:hover{
+			background-color: rgba(0,0,0,0.3);
+		}
 		.slika{
 			position: absolute;
 			right: 5%;
-			top: 10%;
-			height: 80%;
+			top: 20%;
+			height: 60%;
 			width: auto;
 			opacity: 1;
 			transition: .5s ease;
@@ -232,8 +240,9 @@
 			width: 100%;
 			left: 0%;
 			background-color: white;
-			box-shadow: 0 0 10px rgba(0,0,0,1);
 			display: table;
+			font-size: calc(6px + 0.3vw); 
+			box-shadow:  0 0 10px rgba(0,0,0,0.4);	
 		}
 		.a{
 			display: auto;
@@ -243,7 +252,7 @@
 		  				display: none;
 		    		}
 				}
-	</style>
+	</style>white
 </head>
 <body>
 	<div class="div" id="start">
